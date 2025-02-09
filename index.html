@@ -70,13 +70,14 @@
             z-index: 1;
         }
 
+        /* 수정된 confirm 버튼 */
         #confirmButton {
-            position: absolute;
-            top: 78%;
+            position: fixed; /* 화면 크기 변경에 따라 위치 고정 */
+            top: 78%; /* 비율을 조정할 경우 위치가 고정됨 */
             left: 57.5%;
             transform: translate(-50%, -50%);
             cursor: pointer;
-            z-index: 3;
+            z-index: 10; /* extra-image보다 우선 */
             opacity: 1;
             pointer-events: none;
         }
@@ -210,3 +211,4 @@
     </script>
 </body>
 </html>
+
